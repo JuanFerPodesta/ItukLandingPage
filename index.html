@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/app/scss/style.css" />
+    <title>ITUK - landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay hide-for-desktop has-fade"></div>
+      <nav class="container flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo"
+          ><img src="/images/_logo.png" alt="logo"
+        /></a>
+        <a id="btnHamburger" class="header__toggle hide-for-desktop" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="header__links hide-for-mobile">
+          <a href="#">Novedades</a>
+          <a href="#">Productos</a>
+          <a href="#">Sobre nosotros</a>
+          <a href="#">Dónde encontrarnos</a>
+          <a href="#">Contacto</a>
+        </div>
+        <!-- agregar link a la tienda para este botón -->
+        <a href="#" class="button header__cta hide-for-mobile">Tienda</a>
+      </nav>
+      <div class="header__menu container hide-for-desktop has-fade">
+        <a href="#">Novedades</a>
+        <a href="#">Productos</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Dónde encontrarnos</a>
+        <a href="#">Contacto</a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__image">
+      </div>
+      <h1 class="hero__text">DE NUESTRA TIENDA A TU HOGAR</h1>
+        <h4 class="hero__text" id="circle">Gifts & Deco</h4>
+        <a href="#" class="button header__cta">Tienda</a>
+        <h5 class="hero__text">Visitá Nuestra Tienda y mirá todos nuestros productos</h5>
+      </div>
+    </section>
+  </body>
+  <script src="/app/js/script.js"></script>
+</html>
