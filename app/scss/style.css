@@ -206,7 +206,7 @@ button:hover,
 }
 
 .header__logo img {
-  width: 12.5rem;
+  width: auto;
   height: 3.34375rem;
 }
 
@@ -331,19 +331,19 @@ button:hover,
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 10rem;
+  min-height: 5rem;
   padding: 0.5rem;
 }
 
 @media (min-width: 40em) {
   .hero__image {
-    min-height: 15rem;
+    min-height: 12.5rem;
   }
 }
 
 @media (min-width: 64em) {
   .hero__image {
-    min-height: 20rem;
+    min-height: 15rem;
   }
 }
 
@@ -389,5 +389,140 @@ button:hover,
   .hero h5 {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-height: 600px) {
+  .hero__image {
+    height: 2.9rem;
+    margin-top: 1.8rem;
+  }
+  .hero > h1, .hero > h4 {
+    font-size: 1.3rem;
+  }
+  .hero > h5 {
+    display: none;
+  }
+  .hero > a {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .hero__image {
+    background-image: url("/images/logo.responsive.png");
+    min-height: 3.5rem;
+  }
+  .hero > h1,
+  .hero > h5 {
+    display: none;
+  }
+  .hero > a {
+    margin-bottom: 25px;
+  }
+}
+
+.novedades {
+  background: -webkit-gradient(linear, left top, left bottom, from(#efd7bd), to(rgba(228, 217, 205, 0.05)));
+  background: linear-gradient(#efd7bd, rgba(228, 217, 205, 0.05));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.productos {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd));
+  background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nosotros {
+  background: -webkit-gradient(linear, left top, left bottom, from(#efd7bd), to(rgba(228, 217, 205, 0.05)));
+  background: linear-gradient(#efd7bd, rgba(228, 217, 205, 0.05));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contacto {
+  background: -webkit-gradient(linear, left top, left bottom, from(#efd7bd), to(rgba(228, 217, 205, 0.05)));
+  background: linear-gradient(#efd7bd, rgba(228, 217, 205, 0.05));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.encontranos {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd));
+  background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

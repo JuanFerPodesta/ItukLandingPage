@@ -17,15 +17,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 10rem;
+    min-height: 5rem;
     padding: 0.5rem;
 
     @include breakpoint-up(medium) {
-      min-height: 15rem;
+      
+      min-height: 12.5rem;
     }
 
     @include breakpoint-up(large) {
-      min-height: 20rem;
+      min-height: 15rem;
     }
   }
 
@@ -39,9 +40,11 @@
   h1 {
     font-size: 1.3rem;
     line-height: 1.15;
+    
 
     @include breakpoint-up(medium) {
       font-size: 2rem;
+      
     }
     @include breakpoint-up(large) {
       font-size: 2.31rem;
@@ -59,5 +62,42 @@
     @include breakpoint-up(large) {
       font-size: 1.5rem;
     }
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .hero__image {
+    // background-image: url("/images/logo.responsive.png");
+    height: 2.9rem;
+    margin-top: 1.8rem;
+  }
+
+.hero>h1, .hero>h4{
+    font-size: 1.3rem;
+}
+
+  .hero > h5{
+    display: none;
+  }
+
+  .hero > a {
+    margin-bottom: 50px;
+  }
+}
+
+
+@media screen and (max-height: 500px) {
+  .hero__image {
+    background-image: url("/images/logo.responsive.png");
+    min-height: 3.5rem;
+  }
+
+  .hero>h1,
+  .hero>h5 {
+    display: none;
+  }
+
+  .hero>a {
+    margin-bottom: 25px;
   }
 }
