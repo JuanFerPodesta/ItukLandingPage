@@ -1,6 +1,10 @@
 .header {
   // hambuerguer open styles
-
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  
   &.open {
     .overlay {
       display: block;
@@ -20,13 +24,14 @@
   nav {
     position: relative;
     background-color: $septimo;
-    padding-top: 1.0625rem;
-    padding-bottom: 1.0625rem;
+    opacity: 0.98;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
   &__logo {
     img {
       width: auto;
-      height: 3.34375rem;
+      height: 3rem;
     }
   }
   //mobile menu toggle

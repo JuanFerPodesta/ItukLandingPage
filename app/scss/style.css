@@ -156,7 +156,7 @@ button,
   cursor: pointer;
   color: white;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   color: white;
   -webkit-transition: opacity 300ms ease-in-out;
@@ -180,6 +180,13 @@ button:hover,
   }
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .header.open .overlay {
   display: block;
 }
@@ -201,13 +208,14 @@ button:hover,
 .header nav {
   position: relative;
   background-color: white;
-  padding-top: 1.0625rem;
-  padding-bottom: 1.0625rem;
+  opacity: 0.98;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .header__logo img {
   width: auto;
-  height: 3.34375rem;
+  height: 3rem;
 }
 
 .header__toggle > span {
@@ -250,7 +258,7 @@ button:hover,
 
 .header__links a {
   position: relative;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #07080d;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
@@ -303,6 +311,9 @@ button:hover,
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd));
   background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
+  position: absolute;
+  width: 100%;
+  top: 5.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,6 +329,7 @@ button:hover,
           align-items: center;
   height: calc(100vh - 5.8rem);
   font-family: "Josefin Sans", sans-serif;
+  z-index: -1;
 }
 
 .hero__image {
@@ -440,6 +452,9 @@ button:hover,
   height: 100vh;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  top: 100vh;
+  z-index: -2;
 }
 
 .productos {
@@ -461,6 +476,9 @@ button:hover,
   height: 100vh;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  top: 200vh;
+  z-index: -2;
 }
 
 .nosotros {
@@ -482,6 +500,9 @@ button:hover,
   height: 100vh;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  top: 300vh;
+  z-index: -2;
 }
 
 .contacto {
@@ -503,6 +524,9 @@ button:hover,
   height: 100vh;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  top: 500vh;
+  z-index: -2;
 }
 
 .encontranos {
@@ -524,5 +548,8 @@ button:hover,
   height: 100vh;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  top: 400vh;
+  z-index: -2;
 }
 /*# sourceMappingURL=style.css.map */

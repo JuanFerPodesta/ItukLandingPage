@@ -1,14 +1,17 @@
 .hero {
-  background: linear-gradient(
-    rgba(228, 217, 205, 0.05),
-    rgba(239, 215, 189, 1)
-  );
+  background: linear-gradient(rgba(228, 217, 205, 0.05),
+        rgba(239, 215, 189, 1));
+  position: absolute;
+  width: 100%;
+  top: 5.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 5.8rem);
   font-family: "Josefin Sans", sans-serif;
+  z-index: -1;
+  
 
   &__image {
     flex: 1;
@@ -67,7 +70,6 @@
 
 @media screen and (max-height: 600px) {
   .hero__image {
-    // background-image: url("/images/logo.responsive.png");
     height: 2.9rem;
     margin-top: 1.8rem;
   }
