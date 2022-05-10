@@ -22,7 +22,7 @@ btnHamburger.addEventListener("click", function () {
   }
 });
 
-// *** funciones hamburguerBtn ***
+// *** funciones btnHamburger ***
 
 function cerrarBoton() {
   header.classList.remove("open");
@@ -42,4 +42,4 @@ function abrirBoton() {
   });
 }
 
-// *** fin funciones hamburguerBtn ***
+// *** fin funciones btnHamburger ***
