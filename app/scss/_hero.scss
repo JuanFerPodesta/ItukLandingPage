@@ -3,14 +3,15 @@
         rgba(239, 215, 189, 1));
   position: absolute;
   width: 100%;
-  top: 5.8rem;
+  top: 4.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 5.8rem);
+  height: calc(100vh - 4.8rem);
   font-family: "Josefin Sans", sans-serif;
   z-index: -1;
+ 
   
 
   &__image {

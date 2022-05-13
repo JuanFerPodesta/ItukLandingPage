@@ -180,6 +180,10 @@ button:hover,
   }
 }
 
+.hidden {
+  display: none !important;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -313,7 +317,7 @@ button:hover,
   background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
   position: absolute;
   width: 100%;
-  top: 5.8rem;
+  top: 4.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +331,7 @@ button:hover,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 5.8rem);
+  height: calc(100vh - 4.8rem);
   font-family: "Josefin Sans", sans-serif;
   z-index: -1;
 }
@@ -439,13 +443,8 @@ button:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -455,6 +454,45 @@ button:hover,
   position: absolute;
   top: 100vh;
   z-index: -2;
+  text-align: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 85vh;
+  margin: 4.5rem 10px 10px 10px;
+  width: 100%;
+}
+
+.cardsNovedades {
+  min-width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  border: 2px solid red;
 }
 
 .productos {

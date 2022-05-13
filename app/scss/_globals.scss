@@ -91,8 +91,13 @@ button,
 }
 
 .hide-for-desktop {
-  // hide for desktops viewport widths
+  // hide for desktops viepwport widths
   @include breakpoint-up(large) {
     display: none;
   }
+}
+
+
+.hidden {
+  display: none !important;
 }
