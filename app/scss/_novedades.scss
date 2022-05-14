@@ -23,6 +23,7 @@
 }
 
 .cardsNovedades {
+    position: relative;
     min-width: 20rem;
     display: flex;
     flex-direction: column;
@@ -32,5 +33,153 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
-    border: 2px solid red;
+    min-height: 30%;
+    
+}
+
+.billeteraStaFe {
+    background-color: $santaFeAzul;
+    color: $quinto;
+
+    > h1 {
+    position: absolute;
+    top: 35%;
+    // @include breakpoint-down(large) {
+    //         font-size: $font-med;
+    //         color: $santaFeRosa;
+    //     }
+    @include breakpoint-down(medium) {
+            filter: drop-shadow(1px 1px 0px $santaFeRosa);
+            top: 30%;
+    }
+    }
+
+    > .p1 {
+    position: absolute;
+    top: 27.5%;
+    letter-spacing: 0.1rem;
+    @include breakpoint-down(large) {
+            font-size: $font-small;
+            top: 22.5%;
+        }
+    @include breakpoint-down(medium) {
+            display: none;
+        }
+    }
+    
+
+    > span {
+    position: absolute;
+    top: 45%;
+    filter: drop-shadow(1px 1px 1px $quinto);
+    font-weight: 500;
+    font-size: $font-big;
+    color: $santaFeRosa;
+
+    @include breakpoint-down(medium) {
+            font-size: $font-large;
+            top: 39%;
+        }
+    }
+
+    >.p2 {
+    position: absolute;
+    top: 63.5%;
+    letter-spacing: 0.1rem;
+    @include breakpoint-down(large) {
+            margin: 65px;
+        }
+    @include breakpoint-down(medium) {
+            margin: 35px;
+            font-size: $font-small;
+        }
+    }
+}
+
+.logoSF {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-image: url("/images/logoSF.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30%;
+    height: 10%;
+    margin: 10px;
+
+   
+    @include breakpoint-down(large) {
+            top: 5%;
+            left: 7.5%;
+            height: 18%;
+    }
+    @include breakpoint-down(medium) {
+            top: 5%;
+            left: 0;
+            height: 15%;
+
+    }
+}
+
+.logoPlusPagos {
+    color: $santaFeRosa;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-image: url("/images/logo-pluspagos-blanco.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30%;
+    height: 10%;
+    margin: 10px;
+  
+
+    @include breakpoint-down(large) {
+            top: 5%;
+            right: 7.5%;
+            height: 18%;
+    }
+    @include breakpoint-down(medium) {
+            top: 5%;
+            right: 0;
+            height: 15%;
+    }
+}
+
+.creditCards {
+    background-image: linear-gradient($primero, $doce);
+    border: 2px solid $primero;
+    color: $segundo;
+    
+    
+
+    > h1 {
+        font-size: $font-large;
+        filter: drop-shadow(5px 5px 0px $decimo);
+        @include breakpoint-down(medium) {
+            font-size: 60px;
+        }
+        
+    }
+    > span {
+        position: absolute;
+        top: 30%;
+        font-size: $font-large;
+        @include breakpoint-down(medium) {
+                font-size: 25px;
+        }
+    }
+
+    > p {
+        position: absolute;
+        top: 75%;
+        font-size: 25px;
+        color: $santaFeAzul;
+        @include breakpoint-down(medium) {
+                font-size: 15px;
+        }
+        
+    }       
 }
