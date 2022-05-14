@@ -629,33 +629,21 @@ button:hover,
 }
 
 .creditCards {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#4a4c5e), to(#cdcde0));
-  background-image: linear-gradient(#4a4c5e, #cdcde0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1c225e), to(#a6aac9));
+  background-image: linear-gradient(#1c225e, #a6aac9);
   border: 2px solid #4a4c5e;
   color: #efd7bd;
 }
 
 .creditCards > h1 {
   font-size: 5rem;
-  -webkit-filter: drop-shadow(5px 5px 0px #464b72);
-          filter: drop-shadow(5px 5px 0px #464b72);
+  -webkit-filter: drop-shadow(3px 3px 0px #1c225e);
+          filter: drop-shadow(3px 3px 0px #1c225e);
 }
 
 @media (max-width: 63.9375em) {
   .creditCards > h1 {
-    font-size: 60px;
-  }
-}
-
-.creditCards > span {
-  position: absolute;
-  top: 30%;
-  font-size: 5rem;
-}
-
-@media (max-width: 63.9375em) {
-  .creditCards > span {
-    font-size: 25px;
+    font-size: 50px;
   }
 }
 
@@ -663,12 +651,13 @@ button:hover,
   position: absolute;
   top: 75%;
   font-size: 25px;
-  color: #1c225e;
+  color: #07080d;
+  letter-spacing: 0.1rem;
 }
 
 @media (max-width: 63.9375em) {
   .creditCards > p {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
 

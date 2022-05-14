@@ -149,36 +149,27 @@
 }
 
 .creditCards {
-    background-image: linear-gradient($primero, $doce);
+    background-image: linear-gradient($santaFeAzul, $octavo);
     border: 2px solid $primero;
     color: $segundo;
     
-    
-
     > h1 {
         font-size: $font-large;
-        filter: drop-shadow(5px 5px 0px $decimo);
+        filter: drop-shadow(3px 3px 0px $santaFeAzul);
         @include breakpoint-down(medium) {
-            font-size: 60px;
+            font-size: 50px;
         }
         
-    }
-    > span {
-        position: absolute;
-        top: 30%;
-        font-size: $font-large;
-        @include breakpoint-down(medium) {
-                font-size: 25px;
-        }
     }
 
     > p {
         position: absolute;
         top: 75%;
         font-size: 25px;
-        color: $santaFeAzul;
+        color: $cuarto;
+        letter-spacing: 0.1rem;
         @include breakpoint-down(medium) {
-                font-size: 15px;
+                font-size: $font-small;
         }
         
     }       
