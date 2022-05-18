@@ -44,10 +44,7 @@
     > h1 {
     position: absolute;
     top: 35%;
-    // @include breakpoint-down(large) {
-    //         font-size: $font-med;
-    //         color: $santaFeRosa;
-    //     }
+    
     @include breakpoint-down(medium) {
             filter: drop-shadow(1px 1px 0px $santaFeRosa);
             top: 30%;

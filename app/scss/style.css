@@ -215,6 +215,8 @@ button:hover,
   opacity: 0.98;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  -webkit-box-shadow: 0.1px 0.1px 3px #b4bbb4;
+          box-shadow: 0.1px 0.1px 3px #b4bbb4;
 }
 
 .header__logo img {
@@ -317,7 +319,7 @@ button:hover,
   background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
   position: absolute;
   width: 100%;
-  top: 4.8rem;
+  top: 5.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +333,7 @@ button:hover,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 4.8rem);
+  height: calc(100vh - 5.5rem);
   font-family: "Josefin Sans", sans-serif;
   z-index: -1;
 }
@@ -727,7 +729,6 @@ button:hover,
           align-items: center;
   height: 100vh;
   width: 100%;
-  font-family: "Josefin Sans", sans-serif;
   position: absolute;
   top: 500vh;
   z-index: -2;
@@ -736,6 +737,69 @@ button:hover,
 .encontranos {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd));
   background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
+  height: 100vh;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  top: 400vh;
+  z-index: -2;
+}
+
+.rowMap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85vh;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5.5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .rowMap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    height: 100%;
+  }
+}
+
+.mapouter {
+  border: 5px solid #f3f4f6;
+  height: 90%;
+  min-width: 20rem;
+  max-width: 50%;
+  -webkit-box-shadow: 1px 2px 5px #4a4c5e;
+          box-shadow: 1px 2px 5px #4a4c5e;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 63.9375em) {
+  .mapouter {
+    height: 50vh;
+    max-width: 90%;
+  }
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+.datos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,17 +807,54 @@ button:hover,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 35%;
+  min-width: 20rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 63.9375em) {
+  .datos {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .datos {
+    margin-top: 5%;
+    min-height: 50%;
+    width: 90%;
+  }
+}
+
+p {
+  margin: 0px 0px 0px 5px;
+  padding: 15px;
+}
+
+@media (max-width: 87.4375em) {
+  p {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  p {
+    margin-top: 5px;
+    padding: 3px;
+  }
+}
+
+.datitos {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  width: 100%;
-  font-family: "Josefin Sans", sans-serif;
-  position: absolute;
-  top: 400vh;
-  z-index: -2;
 }
 /*# sourceMappingURL=style.css.map */
