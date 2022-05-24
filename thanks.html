@@ -10,90 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link href="//db.onlinewebfonts.com/c/3fe86b565b2be999a93fb15a67af8cec?family=Laqonic4FUnicase-Light" rel="stylesheet" type="text/css"/>
+    <link
+    rel="stylesheet"
+    href="/app/scss/fontawesome-free-6.1.1-web/css/all.css"
+  />
+    <link rel="stylesheet" href="/app/scss/style.css" />
     <title>Gracias!</title>
   </head>
 
   <body>
     <div class="thanks">
       <div class="thank-content">
-        <img class="mail-icon" src="images/mail_icon.png" alt="mail" />
-        <h1 class="thanks-h1">Gracias!</h1>
+        <div class="mail-icon"><i class="fa-regular fa-envelope "></i></div>
+        <h1 class="thanks-h1">GRACIAS!</h1>
         <p class="request">Su pedido ha sido enviado con exito!</p>
-        <a href="index.html" class="volver">volver</a>
+        <a href="index.html" class="button">volver</a>
       </div>
-      <style>
-        * {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-        }
-
-        .thanks {
-          width: 100%;
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .mail-icon {
-          position: absolute;
-          background: #ff8684;
-          top: 230px;
-          width: 80px;
-          border-radius: 50%;
-          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-        }
-
-        .thank-content {
-          width: 450px;
-          height: 300px;
-          border-radius: 10px;
-          background-color: #facac9;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .thanks-h1 {
-          position: relative;
-          top: 5px;
-          font-size: 5rem;
-          font-family: Dancing Script;
-        }
-
-        .request {
-          position: relative;
-          top: 5px;
-          font-family: "Roboto";
-          font-weight: 100;
-          font-size: 1rem;
-        }
-        .volver {
-          position: relative;
-          top: 30px;
-          text-decoration: none;
-          padding: 10px;
-          width: 90px;
-          height: 30px;
-          font-family: "Roboto";
-          border: none;
-          border-radius: 20px;
-          outline: none;
-          background: #ff8684;
-          color: #f0f8ff;
-          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .volver:hover {
-          transform: scale(0.9, 0.9);
-          cursor: pointer;
-        }
       </style>
     </div>
   </body>

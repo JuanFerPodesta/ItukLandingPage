@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -17,6 +18,9 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: $font-med;
   font-weight: 300;
+  scroll-snap-type: y mandatory;
+
+  
 
   &.noscroll {
     overflow: hidden;
@@ -96,7 +100,6 @@ button,
     display: none;
   }
 }
-
 
 .hidden {
   display: none !important;
