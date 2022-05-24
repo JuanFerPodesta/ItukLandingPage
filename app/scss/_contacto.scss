@@ -1,7 +1,6 @@
 .contacto {
     background: linear-gradient(rgba(239, 215, 189, 1), rgba(228, 217, 205, 0.05));
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -9,4 +8,84 @@
     position: absolute;
     top: 500vh;
     z-index: -2;
+    flex-wrap: wrap;
+    position: relative;
+
+    img {
+        margin: 4.5rem 3px 3px 3px;
+        width: 400px;
+        align-self: center;
+        justify-self: center;
+        filter: drop-shadow(5px 5px 4px $primero);
+        
+        
+
+        @include breakpoint-down(medium) {
+                width: 300px;
+                position: absolute;
+                top: 2.5rem;
+                flex: 1;
+            }
+    }
+}
+
+.formContacto {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    height: 80vh;
+    margin: 4.5rem 3px 3px 3px;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+    @include breakpoint-down(medium) {
+            width: 400px;
+            margin-top: 130px;
+            align-items: center;
+        }
+    
+
+    h3 {
+        // font-weight: 200;
+        margin-bottom: 40px;
+        @include breakpoint-down(medium) {
+                margin-top: 50%;
+                text-align: center;
+            }
+        
+    }
+
+    .datosForm {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: space-around;
+        width: 40vw;
+
+        @include breakpoint-down(medium) {
+                min-width: 300px;
+            }
+
+        input, textarea {
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid $once;
+            outline: none;
+            padding: 1%;
+            @include breakpoint-down(medium) {
+                    margin-bottom: 10px;
+                }
+        }
+        
+
+        .btn {
+            align-self: flex-start;
+            
+            @include breakpoint-down(medium) {
+                    align-self: center;
+                }
+        }
+
+    }
 }
