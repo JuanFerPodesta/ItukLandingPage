@@ -92,11 +92,9 @@ body {
   height: 100%;
   color: #07080d;
   line-height: 1.3;
-  font-family: "Public Sans", sans-serif;
-  font-size: 1.125rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
   font-weight: 300;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
 }
 
 body.noscroll {
@@ -192,6 +190,7 @@ button:hover,
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .header.open .overlay {
@@ -267,7 +266,7 @@ button:hover,
 
 .header__links a {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #07080d;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
@@ -318,8 +317,8 @@ button:hover,
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd));
-  background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd)) !important;
+  background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd) !important;
   position: absolute;
   width: 100%;
   top: 5.5rem;
@@ -338,7 +337,6 @@ button:hover,
           align-items: center;
   height: calc(100vh - 5.5rem);
   font-family: "Josefin Sans", sans-serif;
-  z-index: -1;
 }
 
 .hero__image {
@@ -443,8 +441,7 @@ button:hover,
 }
 
 .novedades {
-  background: -webkit-gradient(linear, left top, left bottom, from(#efd7bd), to(rgba(228, 217, 205, 0.05)));
-  background: linear-gradient(#efd7bd, rgba(228, 217, 205, 0.05));
+  background: #efd7bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +455,6 @@ button:hover,
   font-family: "Josefin Sans", sans-serif;
   position: absolute;
   top: 100vh;
-  z-index: -2;
   text-align: center;
 }
 
@@ -667,8 +663,7 @@ button:hover,
 }
 
 .productos {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd));
-  background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
+  background: #efd7bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,12 +682,194 @@ button:hover,
   font-family: "Josefin Sans", sans-serif;
   position: absolute;
   top: 200vh;
-  z-index: -2;
+}
+
+@media (max-width: 63.9375em) {
+  .productos {
+    height: 200vh;
+  }
+}
+
+.productosFlex {
+  background: #efd7bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  margin: 6rem 10px 2rem 10px;
+  border: 2px solid red;
+}
+
+.carousel, .listadoProductos {
+  height: 98%;
+  min-width: 350px;
+  width: 58%;
+  border: 2px solid red;
+  margin: 5px;
+  background: #efd7bd;
+}
+
+@media (max-width: 63.9375em) {
+  .carousel, .listadoProductos {
+    width: 95%;
+    margin-top: 10px;
+    height: 75vh;
+  }
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  position: relative;
+  width: 58%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+@media (max-width: 63.9375em) {
+  .carousel__list {
+    width: 65%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .carousel__list {
+    width: 90%;
+    margin-right: 10%;
+  }
+}
+
+.carousel__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 0px;
+  width: 70%;
+  height: 80%;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+  position: absolute;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.carousel__item:nth-child(1) {
+  background: linear-gradient(45deg, #2D35EB 0%, #904ED4 100%);
+}
+
+.carousel__item:nth-child(2) {
+  background: linear-gradient(45deg, #2D35EB 0%, #fdbb2d 100%);
+}
+
+.carousel__item:nth-child(3) {
+  background: linear-gradient(45deg, #2D35EB 0%, #22c1c3 100%);
+}
+
+.carousel__item:nth-child(4) {
+  background: linear-gradient(45deg, #fdbb2d 0%, #904ED4 100%);
+}
+
+.carousel__item:nth-child(5) {
+  background: linear-gradient(45deg, #22c1c3 0%, #904ED4 100%);
+}
+
+.carousel__item[data-pos="0"] {
+  z-index: 5;
+}
+
+.carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
+  opacity: 0.7;
+  -webkit-filter: blur(1px) grayscale(10%);
+          filter: blur(1px) grayscale(10%);
+}
+
+.carousel__item[data-pos="-1"] {
+  -webkit-transform: translateX(-15%) scale(0.9);
+          transform: translateX(-15%) scale(0.9);
+  z-index: 4;
+}
+
+.carousel__item[data-pos="1"] {
+  -webkit-transform: translateX(15%) scale(0.9);
+          transform: translateX(15%) scale(0.9);
+  z-index: 4;
+}
+
+.carousel__item[data-pos="-2"], .carousel__item[data-pos="2"] {
+  opacity: 0.4;
+  -webkit-filter: blur(3px) grayscale(20%);
+          filter: blur(3px) grayscale(20%);
+}
+
+.carousel__item[data-pos="-2"] {
+  -webkit-transform: translateX(-30%) scale(0.8);
+          transform: translateX(-30%) scale(0.8);
+  z-index: 3;
+}
+
+.carousel__item[data-pos="2"] {
+  -webkit-transform: translateX(30%) scale(0.8);
+          transform: translateX(30%) scale(0.8);
+  z-index: 3;
+}
+
+.listadoProductos {
+  width: 30%;
+  text-align: center;
+}
+
+.listadoProductos ul {
+  list-style-type: none;
+}
+
+.listadoProductos ul li:hover {
+  font-size: 25px;
+  font-weight: bold;
+  -webkit-filter: drop-shadow(2px 2px 2px #4a4c5e);
+          filter: drop-shadow(2px 2px 2px #4a4c5e);
 }
 
 .nosotros {
-  background: -webkit-gradient(linear, left top, left bottom, from(#efd7bd), to(rgba(228, 217, 205, 0.05)));
-  background: linear-gradient(#efd7bd, rgba(228, 217, 205, 0.05));
+  background: #efd7bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,12 +888,76 @@ button:hover,
   font-family: "Josefin Sans", sans-serif;
   position: absolute;
   top: 300vh;
-  z-index: -2;
+}
+
+@media (max-width: 63.9375em) {
+  .nosotros {
+    height: 175vh;
+    top: 400vh;
+  }
+}
+
+.nosotrosFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  margin: 6rem 3px;
+}
+
+@media (max-width: 63.9375em) {
+  .nosotrosFlex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 6rem 0 0 0;
+  }
+}
+
+.nosotrosFlex p {
+  width: 40%;
+  font-size: 1.125rem;
+  margin: 0 10px;
+  border: 2px solid red;
+}
+
+@media (max-width: 63.9375em) {
+  .nosotrosFlex p {
+    width: 95%;
+    height: 50%;
+    font-size: 1rem;
+  }
+}
+
+.imgNosotros {
+  background: url("/images/nosotros.jpeg");
+  width: 48%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 10px;
+  -webkit-filter: drop-shadow(5px 5px 2px #4a4c5e);
+          filter: drop-shadow(5px 5px 2px #4a4c5e);
+}
+
+@media (max-width: 63.9375em) {
+  .imgNosotros {
+    width: 95%;
+    height: 50%;
+  }
 }
 
 .contacto {
-  background: -webkit-gradient(linear, left top, left bottom, from(#efd7bd), to(rgba(228, 217, 205, 0.05)));
-  background: linear-gradient(#efd7bd, rgba(228, 217, 205, 0.05));
+  background: #efd7bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,10 +971,15 @@ button:hover,
   width: 100%;
   position: absolute;
   top: 500vh;
-  z-index: -2;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
+}
+
+@media (max-width: 63.9375em) {
+  .contacto {
+    top: 675vh;
+  }
 }
 
 .contacto img {
@@ -824,7 +1070,7 @@ button:hover,
 .formContacto .datosForm input, .formContacto .datosForm textarea {
   margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid #e4d9cd;
+  border-bottom: 1px solid #efd7bd;
   outline: none;
   padding: 1%;
 }
@@ -849,14 +1095,19 @@ button:hover,
 }
 
 .encontranos {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd));
-  background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd);
+  background: #efd7bd;
   height: 100vh;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
   position: absolute;
   top: 400vh;
   z-index: -2;
+}
+
+@media (max-width: 63.9375em) {
+  .encontranos {
+    top: 575vh;
+  }
 }
 
 .rowMap {
@@ -923,7 +1174,7 @@ button:hover,
           flex-direction: column;
   width: 35%;
   min-width: 20rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -1030,7 +1281,7 @@ p {
   text-align: center;
   font-size: 50px;
   background: #4a4c5e;
-  color: #e4d9cd;
+  color: #efd7bd;
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1057,7 +1308,7 @@ p {
 
 @media (max-width: 39.9375em) {
   .thanks .mail-icon {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     width: 35px;
     height: 35px;
   }
@@ -1078,7 +1329,7 @@ p {
 
 @media (max-width: 39.9375em) {
   .thanks .thanks-h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 

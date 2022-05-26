@@ -1,5 +1,5 @@
 .contacto {
-    background: linear-gradient(rgba(239, 215, 189, 1), rgba(228, 217, 205, 0.05));
+    background: $once;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,9 +7,12 @@
     width: 100%;
     position: absolute;
     top: 500vh;
-    z-index: -2;
     flex-wrap: wrap;
     position: relative;
+
+    @include breakpoint-down(medium) {
+            top: 675vh;
+        }
 
     img {
         margin: 4.5rem 3px 3px 3px;
@@ -18,8 +21,6 @@
         justify-self: center;
         filter: drop-shadow(5px 5px 4px $primero);
         
-        
-
         @include breakpoint-down(medium) {
                 width: 300px;
                 position: absolute;

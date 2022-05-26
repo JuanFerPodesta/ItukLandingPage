@@ -1,13 +1,16 @@
 .encontranos {
-    background: linear-gradient(rgba(228, 217, 205, 0.05), rgba(239, 215, 189, 1));
+    // color: $sexto;
     // background: linear-gradient( $octavo,$primero);
+    background: $once;
     height: 100vh;
     width: 100%;
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     top: 400vh;
     z-index: -2;
-    // color: $sexto;
+    @include breakpoint-down(medium) {
+            top: 575vh;
+        }
 }
 
 .rowMap {

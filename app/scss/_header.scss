@@ -4,6 +4,8 @@
   top:0;
   left:0;
   width: 100%;
+  z-index: 10;
+  
   
   &.open {
     .overlay {
@@ -76,7 +78,7 @@
   &__links {
     a {
       position: relative;
-      font-size: $font-small;
+      font-size: $font-med;
       color: $cuarto;
       transition: color 300ms ease-in-out;
 

@@ -1,6 +1,5 @@
 .novedades {
-    background: linear-gradient(rgba(239, 215, 189, 1),rgba(228, 217, 205, 0.05)
-            );
+    background: $once;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,7 +8,6 @@
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     top:100vh;
-    z-index: -2;
     text-align: center;
 }
 

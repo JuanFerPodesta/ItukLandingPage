@@ -1,5 +1,5 @@
 .nosotros {
-    background: linear-gradient(rgba(239, 215, 189, 1), rgba(228, 217, 205, 0.05));
+    background: $once;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,5 +9,57 @@
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     top:300vh;
-    z-index: -2;
+    @include breakpoint-down(medium) {
+            height: 175vh;
+            top: 400vh;
+        }
+
 }
+
+.nosotrosFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 6rem 3px;
+    
+
+    @include breakpoint-down(medium) {
+            justify-content: flex-start;
+            margin: 6rem 0 0 0;
+        }
+
+    p {
+        width: 40%;
+        font-size: $font-med;
+        margin: 0 10px;
+        border:2px solid red;
+
+        @include breakpoint-down(medium) {
+                width: 95%;
+                height: 50%;
+                font-size: $font-small;
+            }
+
+    }
+}
+
+.imgNosotros {
+    background: url("/images/nosotros.jpeg");
+    width: 48%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 10px;
+    filter: drop-shadow(5px 5px 2px $primero);
+
+    @include breakpoint-down(medium) {
+            width: 95%;
+            height: 50%;
+            
+        }
+    
+}
+
