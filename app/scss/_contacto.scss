@@ -8,7 +8,6 @@
     position: absolute;
     top: 500vh;
     flex-wrap: wrap;
-    position: relative;
 
     @include breakpoint-down(medium) {
             top: 675vh;

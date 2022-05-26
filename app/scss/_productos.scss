@@ -9,6 +9,7 @@
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     top: 200vh;
+    margin-top: 5.5rem;
 
     @include breakpoint-down(medium) {
             height: 200vh;
@@ -26,14 +27,12 @@
     height: 100%;
     width: 100%;
     margin: 6rem 10px 2rem 10px;
-    border: 2px solid red;
 }
 
 .carousel, .listadoProductos {
     height: 98%;
     min-width: 350px;
     width: 58%;
-    border: 2px solid red;
     margin: 5px;
     background: $once;
 
@@ -152,7 +151,7 @@
         li:hover {
             font-size: 25px;
             font-weight: bold;
-            filter: drop-shadow(2px 2px 2px $primero);
+            filter: drop-shadow(1px 1px 1px $primero);
         }
     }
 }

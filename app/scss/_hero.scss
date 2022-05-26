@@ -8,11 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 5.5rem);
+  // height: calc(100vh - 5.5rem);
+  height: 100vh;
   font-family: "Josefin Sans", sans-serif;
   
 
   &__image {
+    margin-top: 5.5rem;
     flex: 1;
     align-self: stretch;
     background-image: url("/images/_logo-1-impresionDigital.png");

@@ -9,6 +9,8 @@
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     top:300vh;
+    margin-top: 5.5rem;
+
     @include breakpoint-down(medium) {
             height: 175vh;
             top: 400vh;
@@ -34,7 +36,6 @@
         width: 40%;
         font-size: $font-med;
         margin: 0 10px;
-        border:2px solid red;
 
         @include breakpoint-down(medium) {
                 width: 95%;
