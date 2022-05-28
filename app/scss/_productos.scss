@@ -70,6 +70,7 @@
 
         }
                 &__item {
+                    background-image: url("/images/Almohadones/almohadones-1.jpeg");
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -144,14 +145,23 @@
 .listadoProductos {
     width: 30%;
     text-align: center;
+
     
     ul {
         list-style-type: none;
 
-        li:hover {
+        li:hover, .active {
             font-size: 25px;
             font-weight: bold;
             filter: drop-shadow(1px 1px 1px $primero);
+        }
+
+        i {
+            font-size: $font-small;
+        }
+
+        a:visited {
+            text-decoration: none;
         }
     }
 }

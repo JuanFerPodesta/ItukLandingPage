@@ -35,7 +35,7 @@ btnHamburger.addEventListener("click", function () {
 
 // * carousel *
 
-const state = {};
+// const state = {};
 const carouselList = document.querySelector(".carousel__list");
 const carouselItems = document.querySelectorAll(".carousel__item");
 const elems = Array.from(carouselItems);
@@ -43,7 +43,6 @@ const elems = Array.from(carouselItems);
 carouselList.addEventListener("click", function (event) {
   var newActive = event.target;
   var isItem = newActive.closest(".carousel__item");
-
   if (!isItem || newActive.classList.contains("carousel__item_active")) {
     return;
   }
@@ -64,14 +63,12 @@ const update = function (newActive) {
 
   [current, prev, next, first, last].forEach((item) => {
     var itemPos = item.dataset.pos;
-
     item.dataset.pos = getPos(itemPos, newActivePos);
   });
 };
 
 const getPos = function (current, active) {
   const diff = current - active;
-
   if (Math.abs(current - active) > 2) {
     return -current;
   }
@@ -131,3 +128,45 @@ function setBackToDefaultElement(valor) {
 }
 
 // *** end of general functions ***
+
+// *** asignar fotos carousel segun valor btn productsNames
+
+const productsNames = document.querySelectorAll(".productsNames");
+
+completeCarouselImages(productsNames[0].innerHTML);
+activeElement(productsNames[0]);
+
+for (i = 0; i < productsNames.length; i++) {
+  productsNames[i].addEventListener("click", function (e) {
+    for (i = 0; i < productsNames.length; i++) {
+      removeActive(productsNames[i]);
+    }
+    let currentProductName = e.target.innerHTML;
+    let currentProduct = e.target;
+    activeElement(currentProduct);
+    completeCarouselImages(currentProductName);
+  });
+}
+
+function completeCarouselImages(productName) {
+  for (i = 0; i < carouselItems.length; i++) {
+    carouselItems[
+      i
+    ].style.backgroundImage = `url("/images/${productName}/${productName}-${
+      i + 1
+    }.jpeg")`;
+    carouselItems[i].style.backgroundPosition = `center`;
+    carouselItems[i].style.backgroundRepeat = `no-repeat`;
+    carouselItems[i].style.backgroundSize = `cover`;
+  }
+}
+
+function activeElement(element) {
+  element.classList.add("active");
+}
+
+function removeActive(element) {
+  if (element.classList.contains("active")) {
+    element.classList.remove("active");
+  }
+}

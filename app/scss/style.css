@@ -322,6 +322,10 @@ section {
   }
 }
 
+i {
+  font-size: 2rem;
+}
+
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 217, 205, 0.05)), to(#efd7bd)) !important;
   background: linear-gradient(rgba(228, 217, 205, 0.05), #efd7bd) !important;
@@ -778,6 +782,7 @@ section {
 }
 
 .carousel__item {
+  background-image: url("/images/Almohadones/almohadones-1.jpeg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,11 +873,19 @@ section {
   list-style-type: none;
 }
 
-.listadoProductos ul li:hover {
+.listadoProductos ul li:hover, .listadoProductos ul .active {
   font-size: 25px;
   font-weight: bold;
   -webkit-filter: drop-shadow(1px 1px 1px #4a4c5e);
           filter: drop-shadow(1px 1px 1px #4a4c5e);
+}
+
+.listadoProductos ul i {
+  font-size: 1rem;
+}
+
+.listadoProductos ul a:visited {
+  text-decoration: none;
 }
 
 .nosotros {
