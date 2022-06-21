@@ -12,9 +12,12 @@
     margin-top: 5.5rem;
 
     @include breakpoint-down(medium) {
-            height: 175vh;
-            top: 400vh;
+            height: 150vh;
         }
+    
+    @include breakpoint-down(superSmall) {  
+            height: 175vh;
+    }                        
 
 }
 
@@ -29,6 +32,7 @@
 
     @include breakpoint-down(medium) {
             justify-content: flex-start;
+            align-items: flex-start;
             margin: 6rem 0 0 0;
         }
 
@@ -59,8 +63,11 @@
     @include breakpoint-down(medium) {
             width: 95%;
             height: 50%;
-            
+            background-position: top;
         }
-    
+    @include breakpoint-down(superSmall) {
+            background-position: center;
+        }
+
 }
 

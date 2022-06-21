@@ -9,13 +9,7 @@
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     top: 200vh;
-    margin-top: 5.5rem;
-
-    @include breakpoint-down(medium) {
-            height: 200vh;
-        }
-
-   
+    margin-top: 5.5rem;   
 }
 
 .productosFlex {
@@ -39,15 +33,21 @@
     @include breakpoint-down(medium) {
             width: 95%;
             margin-top: 10px;
-            height: 75vh;
         }
 }
+
+
 
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    @include breakpoint-down(medium) {
+            height: 85%;
+        }
+    @include breakpoint-down(medium) {
+            height: 70%;
+        }
 
     &__list {
             display: flex;
@@ -145,15 +145,41 @@
 .listadoProductos {
     width: 30%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 
-    
+    @include breakpoint-down(medium) {
+            height: 15%;
+            width: 100%;
+            margin-right: 10%;
+            padding: 0;
+        }
+    @include breakpoint-down(medium) {
+            height: 27%;
+            width: 100%;
+            margin-right: 10%;
+            padding: 0;
+        }
+
     ul {
         list-style-type: none;
+
+        li {
+            @include breakpoint-down(medium) {
+                   font-size: $font-small;
+                   display: inline;
+                }
+        }
 
         li:hover, .active {
             font-size: 25px;
             font-weight: bold;
             filter: drop-shadow(1px 1px 1px $primero);
+
+            @include breakpoint-down(small) {
+                    font-size: $font-med;
+                }
         }
 
         i {

@@ -10,8 +10,11 @@
     flex-wrap: wrap;
 
     @include breakpoint-down(medium) {
-            top: 675vh;
+            top: 550vh;
         }
+    @include breakpoint-down(superSmall) {
+        top: 575vh;
+    }
 
     img {
         margin: 4.5rem 3px 3px 3px;

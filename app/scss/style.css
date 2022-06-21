@@ -697,12 +697,6 @@ i {
   margin-top: 5.5rem;
 }
 
-@media (max-width: 63.9375em) {
-  .productos {
-    height: 200vh;
-  }
-}
-
 .productosFlex {
   background: #efd7bd;
   display: -webkit-box;
@@ -733,7 +727,6 @@ i {
   .carousel, .listadoProductos {
     width: 95%;
     margin-top: 10px;
-    height: 75vh;
   }
 }
 
@@ -747,6 +740,18 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 63.9375em) {
+  .carousel {
+    height: 85%;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .carousel {
+    height: 70%;
+  }
 }
 
 .carousel__list {
@@ -867,10 +872,44 @@ i {
 .listadoProductos {
   width: 30%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .listadoProductos {
+    height: 15%;
+    width: 100%;
+    margin-right: 10%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .listadoProductos {
+    height: 27%;
+    width: 100%;
+    margin-right: 10%;
+    padding: 0;
+  }
 }
 
 .listadoProductos ul {
   list-style-type: none;
+}
+
+@media (max-width: 63.9375em) {
+  .listadoProductos ul li {
+    font-size: 1rem;
+    display: inline;
+  }
 }
 
 .listadoProductos ul li:hover, .listadoProductos ul .active {
@@ -878,6 +917,12 @@ i {
   font-weight: bold;
   -webkit-filter: drop-shadow(1px 1px 1px #4a4c5e);
           filter: drop-shadow(1px 1px 1px #4a4c5e);
+}
+
+@media (max-width: 39.9375em) {
+  .listadoProductos ul li:hover, .listadoProductos ul .active {
+    font-size: 1.125rem;
+  }
 }
 
 .listadoProductos ul i {
@@ -913,8 +958,13 @@ i {
 
 @media (max-width: 63.9375em) {
   .nosotros {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 24rem) {
+  .nosotros {
     height: 175vh;
-    top: 400vh;
   }
 }
 
@@ -939,6 +989,9 @@ i {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 6rem 0 0 0;
   }
 }
@@ -973,6 +1026,13 @@ i {
   .imgNosotros {
     width: 95%;
     height: 50%;
+    background-position: top;
+  }
+}
+
+@media (max-width: 24rem) {
+  .imgNosotros {
+    background-position: center;
   }
 }
 
@@ -997,7 +1057,13 @@ i {
 
 @media (max-width: 63.9375em) {
   .contacto {
-    top: 675vh;
+    top: 550vh;
+  }
+}
+
+@media (max-width: 24rem) {
+  .contacto {
+    top: 575vh;
   }
 }
 
@@ -1125,7 +1191,13 @@ i {
 
 @media (max-width: 63.9375em) {
   .encontranos {
-    top: 575vh;
+    top: 450vh;
+  }
+}
+
+@media (max-width: 24rem) {
+  .encontranos {
+    top: 475vh;
   }
 }
 
@@ -1335,7 +1407,7 @@ p {
 
 .thanks .thanks-h1 {
   font-size: 5rem;
-  font-family: "Laqonic4FUnicase-Light", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
   padding-top: 5%;
 }
